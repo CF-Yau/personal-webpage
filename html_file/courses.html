@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> YCF courses </title>
+  <link rel = "stylesheet" href = "../css_file/courses.css" >
+  <script src= "../javascript_file/testing.js"></script>
+</head>
+
+<!-- Comments -->
+
+<body>
+
+<!-- negaviation bar -->
+<nav>
+  <ul>
+    <li> <a href="../index.html"> Home </a> </li>
+    <li> <a href="cv.html"> Academic CV </a> </li>
+    <li> <a href="#"> Courses </a> </li>
+    <li> <a href="references.html"> References </a> </li>
+  </ul>
+</nav>
+
+
+<!-- credits table -->
+
+<h2> Courses taken at HKUST </h2>
+
+<ul>
+  <li> <a href="#by_order"> By chronological order </a> </li>
+  <li> <a href="#by_subjects"> By subjects (selected) </a> </li>
+</ul>
+
+
+<h3 id="by_order"> By chronological order </h3>
+
+<h4> Number of credits taken for each semester </h4>
+    <table class="with_border">
+      <tr>
+        <th> year </th>
+        <th> fall </th>
+        <th> winter </th>
+        <th> spring </th>
+        <th> summer </th>
+      </tr>
+      <tr>
+        <th> 1 </th>
+        <td> 13 </td>
+        <td> 0 </td>
+        <td> 15 </td>
+        <td> 1 </td>
+      </tr>
+      <tr>
+        <th> 2 </th>
+        <td> 21 </td>
+        <td> 1 </td>
+        <td> 22 </td>
+        <td> 5 </td>
+      </tr>
+      <tr>
+        <th> 3 </th>
+        <td> 21* </td>
+        <td> 6* </td>
+        <td> 21 </td>
+        <td> 3 </td>
+      </tr>
+      <tr>
+        <th> 4 </th>
+        <td> 21 </td>
+        <td>  </td>
+        <td>  </td>
+        <td>  </td>
+      </tr>
+    </table>
+    <p> * : including credit transfer </p>
+
+
+<!-- canvas for displaying number of credits taken -->
+  <p> Number of credits taken: </p>
+  <canvas id="display_credits" width="200px" height="100px">
+  </canvas>
+  <p>
+    <input type = "button"
+           value = "year 1"
+           onclick = "show_year_credits(1)">
+    <input type = "button"
+           value = "year 2"
+           onclick = "show_year_credits(2)">
+    <input type = "button"
+           value = "year 3"
+           onclick = "show_year_credits(3)">
+    <input type = "button"
+           value = "total"
+           onclick = "show_total_credits()">
+  </p>
+  <p>
+    <input type = "button"
+           value = "clear"
+           onclick = "clear_canvas1()">
+  </p>
+
+
+<!-- courses (chronological order) table -->
+
+<table class="with_border">
+
+  <tr>
+    <th> semester </th>
+    <th> course code </th>
+    <th> course name </th>
+    <th> credits </th>
+    <th> instructor </th>
+  </tr>
+
+  <tr>
+    <td rowspan="5"> 2018-19 Fall </td>
+    <td> CHEM1004 </td>
+    <td> Chemistry in Everyday Life </td>
+    <td> 3 </td>
+    <td> Jason Chan </td>
+  </tr>
+  <tr>
+    <td> LANG1002S </td>
+    <td> English for University Studies I </td>
+    <td> 3 </td>
+    <td> Kasina Wong </td>
+  </tr>
+  <tr>
+    <td> MATH1013 </td>
+    <td> Calculus IB </td>
+    <td> 3 </td>
+    <td> H.L. Chang </td>
+  </tr>
+  <tr>
+    <td> PHYS1112 </td>
+    <td> General Physics I with Calculus </td>
+    <td> 3 </td>
+    <td> T.W. Chen </td>
+  </tr>
+  <tr>
+    <td> PHYS1113 </td>
+    <td> Laboratory for General Physics I </td>
+    <td> 1 </td>
+    <td> M.F. Cheung </td>
+  </tr>
+
+  <tr>
+    <td rowspan="5"> 2018-19 Spring  </td>
+    <td> COMP1022Q </td>
+    <td> Introduction to Computing with Excel VBA </td>
+    <td> 3 </td>
+    <td> Cecia Chan </td>
+  </tr>
+  <tr>
+    <td> LANG1003S </td>
+    <td> English for University Studies II</td>
+    <td> 3 </td>
+    <td> M.J. Megan </td>
+  </tr>
+  <tr>
+    <td> MATH1024  </td>
+    <td> <b class="honor"> Honors </b> Calculus II  </td>
+    <td> 3 </td>
+    <td> M.S. Xiong </td>
+  </tr>
+  <tr>
+    <td> PHYS1002 </td>
+    <td> Introduction to Astrophysics and Astronomy </td>
+    <td> 3 </td>
+    <td> T.W. Chen </td>
+  </tr>
+  <tr>
+    <td> PHYS1114 </td>
+    <td> General Physics II  </td>
+    <td> 3 </td>
+    <td> P.W. Leung </td>
+  </tr>
+
+  <tr>
+    <td> 2018-19 Summer  </td>
+    <td> UROP1100X </td>
+    <td> Undergraduate Research Opportunities Series 1 </td>
+    <td> 1 </td>
+    <td> / </td>
+  </tr>
+
+  <tr>
+    <td rowspan="6"> 2019-20 Fall  </td>
+    <td> ACCT2010 </td>
+    <td> Principles of Accounting I </td>
+    <td> 3 </td>
+    <td> S.M. Bhambhwani </td>
+  </tr>
+  <tr>
+    <td> ECON2113 </td>
+    <td> Microeconomics </td>
+    <td> 3 </td>
+    <td> Robin Gong </td>
+  </tr>
+  <tr>
+    <td> MATH2023 </td>
+    <td> Multivariable Calculus </td>
+    <td> 4 </td>
+    <td> K.H. Cheng </td>
+  </tr>
+  <tr>
+    <td> MATH2121 </td>
+    <td> Linear Algebra </td>
+    <td> 4 </td>
+    <td> E.P. Marberg </td>
+  </tr>
+  <tr>
+    <td> MATH2411  </td>
+    <td> Applied Statistics </td>
+    <td> 4 </td>
+    <td> C.W. Yu </td>
+  </tr>
+  <tr>
+    <td> PHYS2022 </td>
+    <td> Modern Physics </td>
+    <td> 3 </td>
+    <td> Y. Wang </td>
+  </tr>
+
+  <tr>
+    <td> 2019-20 Winter  </td>
+    <td> COMP1029C </td>
+    <td> C Programming Bridging Course </td>
+    <td> 1 </td>
+    <td> Gibson Lam </td>
+  </tr>
+
+  <tr>
+    <td rowspan="6"> 2019-20 Spring </td>
+    <td> COMP2011 </td>
+    <td> Programming with C++ </td>
+    <td> 4 </td>
+    <td> Cindy Li </td>
+  </tr>
+  <tr>
+    <td> ECON3113 </td>
+    <td> Microeconomic Theory I </td>
+    <td> 4 </td>
+    <td> P.H. Au </td>
+  </tr>
+  <tr>
+    <td> ECON3123 </td>
+    <td> Macroeconomic Theory I </td>
+    <td> 3 </td>
+    <td> B.C. Lee </td>
+  </tr>
+  <tr>
+    <td> LABU2040 </td>
+    <td> Business Case Analyses </td>
+    <td> 3 </td>
+    <td> Martha Ng </td>
+  </tr>
+  <tr>
+    <td> MATH2033 </td>
+    <td> Mathematical Analysis </td>
+    <td> 4 </td>
+    <td> K.Y. Li </td>
+  </tr>
+  <tr>
+    <td> MATH2421 </td>
+    <td> Probability </td>
+    <td> 4 </td>
+    <td> C.W. Yu </td>
+  </tr>
+
+  <tr>
+    <td rowspan="2"> 2019-20 Summer </td>
+    <td> MATH2352 </td>
+    <td> Differential Equations </td>
+    <td> 4 </td>
+    <td> Avery Ching </td>
+  </tr>
+  <tr>
+    <td> UROP1100A </td>
+    <td> Undergraduate Research Opportunities Series 1 </td>
+    <td> 1 </td>
+    <td> / </td>
+  </tr>
+
+  <tr>
+    <td rowspan="6"> 2020-21 Fall  </td>
+    <td> COMP2012 </td>
+    <td> Object-Oriented Programming and Data Structures </td>
+    <td> 4 </td>
+    <td> Desmond Tsoi </td>
+  </tr>
+  <tr>
+    <td> ECON3133 </td>
+    <td> Microeconomic Theory II </td>
+    <td> 4 </td>
+    <td> Sunny Huang </td>
+  </tr>
+  <tr>
+    <td> ECON3143 </td>
+    <td> Macroeconomic Theory II </td>
+    <td> 4 </td>
+    <td> Jenny Xu </td>
+  </tr>
+  <tr>
+    <td> LABU2060 </td>
+    <td> Effective Communication in Business  </td>
+    <td> 3 </td>
+    <td> D.D. Gaskell </td>
+  </tr>
+  <tr>
+    <td> MATH2511 </td>
+    <td> Fundamentals of Actuarial Mathematics </td>
+    <td> 3 </td>
+    <td> C.M. Leung </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      credit transfer (from The Chinese University of Hong Kong) <br>
+      Equivalent in HKUST: [HMCC] </td>
+    <td> 3 </td>
+    <td> / </td>
+  </tr>
+
+  <tr>
+    <td rowspan="2"> 2020-21 Winter  </td>
+    <td> ISOM1700 </td>
+    <td> Critical Issues in Business Operations </td>
+    <td> 3 </td>
+    <td> Ronald Lau </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      credit transfer (from Fudan University) <br>
+      Equivalent in HKUST: Discovering Mind and Behavior </td>
+    <td> 3 </td>
+    <td> / </td>
+  </tr>
+
+  <tr>
+    <td rowspan="7"> 2020-21 Spring  </td>
+    <td> COMP2711 </td>
+    <td> Discrete Mathematical Tools for Computer Science</td>
+    <td> 4 </td>
+    <td> K. Yi </td>
+  </tr>
+  <tr>
+    <td> ECON3334 </td>
+    <td> Introduction to Econometrics  </td>
+    <td> 4 </td>
+    <td> P. Wang </td>
+  </tr>
+  <tr>
+    <td> FINA2203 </td>
+    <td> Fundamentals of Business Finance </td>
+    <td> 3 </td>
+    <td> P.I. Mackay </td>
+  </tr>
+  <tr>
+    <td> HUMA1000A </td>
+    <td> Cultures and Values: Language, Communication and Society </td>
+    <td> 3 </td>
+    <td> Cathy Pan </td>
+  </tr>
+  <tr>
+    <td> LANG1117P </td>
+    <td> Advanced Chinese Communication </td>
+    <td> 3 </td>
+    <td> S. Yuan </td>
+  </tr>
+  <tr>
+    <td> MATH4514 </td>
+    <td> Financial Economics in Actuarial Science </td>
+    <td> 3 </td>
+    <td> C.M. Leung </td>
+  </tr>
+  <tr>
+    <td> UROP2100C </td>
+    <td> Undergraduate Research Opportunities Series 2 </td>
+    <td> 1 </td>
+    <td> / </td>
+  </tr>
+
+  <tr>
+    <td> 2020-21 Summer  </td>
+    <td> CENG1800 </td>
+    <td> Introduction to Food Science and Technology </td>
+    <td> 3 </td>
+    <td> Marshal Liu </td>
+  </tr>
+
+  <tr>
+    <td rowspan="7"> 2021-22 Fall </td>
+    <td> COMP4331 </td>
+    <td> Data Mining </td>
+    <td> 3 </td>
+    <td> James Kwok </td>
+  </tr>
+  <tr>
+    <td> ECON4274 </td>
+    <td> Programming Econometrics with R  </td>
+    <td> 4 </td>
+    <td> Sunny Huang </td>
+  </tr>
+  <tr>
+    <td> ECON4284 </td>
+    <td> Econometrics for Cross-Section and Panel Data  </td>
+    <td> 4 </td>
+    <td> J.L. Feng </td>
+  </tr>
+  <tr>
+    <td> ECON4670 </td>
+    <td> Economics Research and Communication </td>
+    <td> 0 </td>
+    <td> / </td>
+  </tr>
+  <tr>
+    <td> MATH3033 </td>
+    <td> Real Analysis  </td>
+    <td> 4 </td>
+    <td> K.Y. Li </td>
+  </tr>
+  <tr>
+    <td> MATH4511 </td>
+    <td> Quantitative Methods for Fixed Income Derivatives  </td>
+    <td> 3 </td>
+    <td> L.X. Wu </td>
+  </tr>
+  <tr>
+    <td> MATH4994 </td>
+    <td> Capstone Project in Mathematics and Economics  </td>
+    <td> 3 </td>
+    <td> Y.K. Kwok </td>
+  </tr>
+
+  <tr>
+    <td rowspan="1">  </td>
+    <td>  </td>
+    <td>  </td>
+    <td>  </td>
+    <td>  </td>
+  </tr>
+
+</table>
+
+
+<!-- courses (classification) table -->
+
+<h3 id="by_subjects"> By subjects (selected) </h3>
+
+<h4> Finance / Financial Mathematics / Actuarial Mathematics </h4>
+<table class="By_subject">
+  <tr>
+    <td class="course_code"> FINA2203 </td>
+    <td> Fundamentals of Business Finance </td>
+    <td class="course_credits"> 3 credits </td>
+  </tr>
+  <tr>
+    <td> MATH2511 </td>
+    <td> Fundamentals of Actuarial Mathematics </td>
+    <td> 3 credits </td>
+  </tr>
+  <tr>
+    <td> MATH4511 </td>
+    <td> Quantitative Methods for Fixed Income Derivatives </td>
+    <td> 3 credits </td>
+  </tr>
+  <tr>
+    <td> MATH4514 </td>
+    <td> Financial Economics in Actuarial Science </td>
+    <td> 3 credits </td>
+  </tr>
+</table>
+
+<h4> Statistics / Probability / Econometrics </h4>
+<table class="By_subject">
+  <tr>
+    <td class="course_code"> MATH2411  </td>
+    <td> Applied Statistics </td>
+    <td class="course_credits"> 4 credits </td>
+  </tr>
+  <tr>
+    <td> MATH2421 </td>
+    <td> Probability </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> ECON3334 </td>
+    <td> Introduction to Econometrics </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> ECON4274 </td>
+    <td> Programming Econometrics with R </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> ECON4284 </td>
+    <td> Econometrics for Cross-Section and Panel Data </td>
+    <td> 4 credits </td>
+  </tr>
+</table>
+
+<h4> Computer Science / Big Data </h4>
+<table class="By_subject">
+  <tr>
+    <td class="course_code"> COMP1022Q </td>
+    <td> Introduction to Computing with Excel VBA	 </td>
+    <td class="course_credits"> 3 credits </td>
+  </tr>
+  <tr>
+    <td> COMP1029C </td>
+    <td> C Programming Bridging Course </td>
+    <td> 1 credit </td>
+  </tr>
+  <tr>
+    <td> COMP2011 </td>
+    <td> Programming with C++	 </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> COMP2012	</td>
+    <td> Object-Oriented Programming and Data Structures </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> COMP2711 </td>
+    <td> Discrete Mathematical Tools for Computer Science </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> COMP4331 </td>
+    <td> Data Mining </td>
+    <td> 3 credits </td>
+  </tr>
+</table>
+
+<h4> Mathematics and Economics </h4>
+<table class="By_subject">
+  <tr>
+    <td class="course_code"> ECON2113 </td>
+    <td> Microeconomics </td>
+    <td class="course_credits"> 3 credits </td>
+  </tr>
+  <tr>
+    <td> ECON3113 </td>
+    <td> Microeconomic Theory I </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> ECON3123 </td>
+    <td> Macroeconomic Theory I </td>
+    <td> 3 credits </td>
+  </tr>
+  <tr>
+    <td> ECON3133 </td>
+    <td> Microeconomic Theory II </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> ECON3143 </td>
+    <td> Macroeconomic Theory II </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> MATH4994 </td>
+    <td> Capstone Project in Mathematics and Economics </td>
+    <td> 3 credits </td>
+  </tr>
+</table>
+
+<h4> Mathematics (Other branches) </h4>
+<table class="By_subject">
+  <tr>
+    <td class="course_code"> MATH1013 </td>
+    <td> Calculus IB </td>
+    <td class="course_credits"> 3 credits </td>
+  </tr>
+  <tr>
+    <td> MATH1024 </td>
+    <td> <b class = "honor"> Honors </b> Calculus II </td>
+    <td> 3 credits </td>
+  </tr>
+  <tr>
+    <td> MATH2023 </td>
+    <td> Multivariable Calculus </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> MATH2033 </td>
+    <td> Mathematical Analysis </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> MATH2121 </td>
+    <td> Linear Algebra </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> MATH2352 </td>
+    <td> Differential Equations </td>
+    <td> 4 credits </td>
+  </tr>
+  <tr>
+    <td> MATH3033 </td>
+    <td> Real Analysis </td>
+    <td> 4 credits </td>
+  </tr>
+</table>
+
+<h4> Accounting </h4>
+<table class="By_subject">
+  <tr>
+    <td class="course_code"> ACCT2010 </td>
+    <td> Principles of Accounting I </td>
+    <td class="course_credits"> 3 credits </td>
+  </tr>
+</table>
+
+<h4> Physics </h4>
+<table class="By_subject">
+  <tr>
+    <td class="course_code"> PHYS1002 </td>
+    <td> Introduction to Astrophysics and Astronomy	</td>
+    <td class="course_credits"> 3 credits </td>
+  </tr>
+  <tr>
+    <td> PHYS1112 </td>
+    <td> General Physics I with Calculus </td>
+    <td> 3 credits </td>
+  </tr>
+  <tr>
+    <td> PHYS1113 </td>
+    <td> Laboratory for General Physics I </td>
+    <td> 1 credit </td>
+  </tr>
+  <tr>
+    <td> PHYS1114 </td>
+    <td> General Physics II </td>
+    <td> 3 credits </td>
+  </tr>
+  <tr>
+    <td> PHYS2022 </td>
+    <td> Modern Physics </td>
+    <td> 3 credits </td>
+  </tr>
+</table>
+
+
+</body>
+</html>
