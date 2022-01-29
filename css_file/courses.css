@@ -1,0 +1,55 @@
+
+/* negativation bar */
+nav {
+  background-color: lightgrey;
+}
+
+/* end of negativation bar*/
+
+h2, h3{
+  text-align: center;
+}
+
+
+/* for jumping to a specific part of the link */
+/* end of jumping to a specific part of the link */
+
+
+
+/* table */
+table.with_border {
+  border: 2px solid;
+}
+
+table.with_border th, table.with_border td {
+  border: 1px solid;
+  text-align: center;
+  font-size: 14pt;
+}
+
+table.By_subject {
+    width: 100%;
+}
+
+table.By_subject td {
+  font-size: 14pt;
+}
+
+.By_subject .course_code {
+  width: 100px;
+}
+
+.By_subject .course_credits {
+  width: 100px;
+}
+
+.honor{
+  color: red;
+}
+/* end of table */
+
+
+/* canvas */
+#display_credits {
+  border: 2px solid;
+}

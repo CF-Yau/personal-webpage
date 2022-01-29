@@ -1,0 +1,46 @@
+
+body {
+  background-color: wheat;
+}
+
+/* negativation bar */
+nav {
+  background-color: lightgrey;
+}
+
+/* end of negativation bar*/
+
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+.Status {
+  text-align: center;
+}
+
+#notice_heading {
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 32pt;
+}
+
+#notice_body {
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 24pt;
+}
+
+#personal_image {
+  float: right;
+}
+
+
+/*
+https://www.youtube.com/watch?v=CZ4HpLw7Hqk
+https://www.javatpoint.com/how-to-make-a-navigation-bar-in-html
+https://www.w3schools.com/howto/howto_js_topnav.asp
+https://www.w3schools.com/css/css_navbar.asp
+*/
